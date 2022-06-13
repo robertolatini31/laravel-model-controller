@@ -17,7 +17,7 @@
     <body>
         
         <header>
-            <h2 class="tetx-center">Header sito</h2>
+            <h2 class="text-center">Header sito</h2>
         </header>
 
         <main>

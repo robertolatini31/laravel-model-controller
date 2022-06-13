@@ -9,15 +9,17 @@ Movies
      
 
         <div class="container">
-            <div class="row row-cols-3 align-items-center">
+            <div class="row row-cols-4 align-items-center">
             @forelse($movies as $movie)
                 <div class="col p-4">
                     <div class="card">
-                        <img src="https://picsum.photos/200" class="card-img-top" alt="{{$movie->title}}">
+                        <img src="{{asset('/img/' . $movie->id . '.jpeg')}}" class="card-img-top" alt="{{$movie->title}}">
                         <div class="card-body">
                             <h3>{{$movie->title}}</h3>
-                            <h4>{{$movie->original_title}} {{$movie->date}}</h4>
-                            <span>Lingua: {{$movie->nationality}} Vote: {{$movie->vote}} Date: {{$movie->date}}</span>
+                            <h4>({{$movie->original_title}})</h4>
+                            <p>Lingua: {{$movie->nationality}}</p>
+                            <p>Vote: {{$movie->vote}}</p>
+                            <p>Date: {{$movie->date}}</p>
                         </div>
                     </div>
                 </div>
