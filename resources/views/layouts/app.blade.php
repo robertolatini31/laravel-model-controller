@@ -24,7 +24,7 @@
         </header>
 
         <main>
-            @yield('content')
+              @yield('content')
         </main>
 
         <footer class="d-flex align-items-center justify-content-center p-3">
