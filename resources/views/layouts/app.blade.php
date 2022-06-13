@@ -16,16 +16,19 @@
     </head>
     <body>
         
-        <header>
-            <h2 class="text-center">Header sito</h2>
+        <header class="p-3 d-flex align-items-center justify-content-center">
+            <div class="my_container d-flex align-items-center justify-content-center">
+                <img class="logo" src="{{asset('/img/logo.png')}}" alt="logo">
+                <h1 class="text-center">ineBool</h1>
+            </div>
         </header>
 
         <main>
             @yield('content')
         </main>
 
-        <footer>
-            <h2 class="text-center">footer sito</h2>
+        <footer class="d-flex align-items-center justify-content-center p-3">
+            <h4 class="p-1">Made By Roberto&copy;</h4>
         </footer>
 
     </body>
